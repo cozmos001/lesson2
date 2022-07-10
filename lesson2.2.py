@@ -8,11 +8,16 @@
     254314
     Сумма цифр числа - 19(2+5+4+3+1+4)
 '''
-# digit = 254314
-# summ = 0
-# for i in str(digit):
-#     summ += int(i)
-# print('Сумма цифр числа - ', summ, '(', '+'.join([i for i in str(digit)]), ')', sep='')
+print('Задача 6')
+number = 254314
+print(f'Число: {number}')
+summ = 0
+for digit in str(number):
+    summ += int(digit)
+print('Сумма цифр числа - ', summ, '(', '+'.join([i for i in str(number)]), ')', sep='')
+
+# Разделитель
+print('-' * 40)
 
 '''
 Задача 7
@@ -21,21 +26,31 @@
     254314
     Произведение цифр числа - 480(2*5*4*3*1*4)
 '''
-# digit = str(254314)
-# prod = int(digit[0])
-# for i in digit[1:]:
-#     prod *= int(i)
-# print('Произведение цифр числа - ', prod, '(', '*'.join([i for i in str(digit)]), ')', sep='')
+print('Задача 7')
+number = str(254314)
+print(f'Число: {number}')
+prod = int(number[0])
+for digit in number[1:]:
+    prod *= int(digit)
+print('Произведение цифр числа - ', prod, '(', '*'.join([i for i in str(number)]), ')', sep='')
+
+# Разделитель
+print('-' * 40)
+
 '''
 Задача 8
 Пользователь должен ввести число. Ваш код должен дать ответ на вопрос: есть ли среди цифр числа 5?
 Если есть, код должен вывексти "Цифра 5 есть в числе", в противном случае вывести: "Цифры 5 нет в числе".
 '''
-# number = input('Введите число: ')
-# if '5' in number:
-#     print('Цифра 5 есть в числе')
-# else:
-#     print('Цифры 5 нет в числе')
+print('Задача 8')
+number = input('Введите число: ')
+if '5' in number:
+    print('Цифра 5 есть в числе')
+else:
+    print('Цифры 5 нет в числе')
+
+# Разделитель
+print('-' * 40)
 
 '''
 Задача 9
@@ -44,12 +59,16 @@
     354359688
     'Цифра - 9 максимальная в числе 354359688'
 '''
-# number = 35435988
-# digit = 0
-# for i in str(number):
-#     if digit < int(i):
-#         digit = int(i)
-# print(f'Цифра - {digit} максимальная в числе {number}')
+print('Задача 9')
+number = 35435988
+digit = 0
+for i in str(number):
+    if digit < int(i):
+        digit = int(i)
+print(f'Цифра - {digit} максимальная в числе {number}')
+
+# Разделитель
+print('-' * 40)
 
 '''
 Задача 10
@@ -58,7 +77,9 @@
         543231235643
         'В числе 2 5-ки.'
 '''
+print('Задача 10')
 number = 543231235643
+print(f'Число: {number}')
 count = 0
 for i in str(number):
     if i == '5':

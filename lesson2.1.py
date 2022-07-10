@@ -11,52 +11,72 @@
     3 0000
 ....
 '''
-# # Циклом while
-# a = 0
-# while a <= 5:
-#     print(a, "0000")
-#     a += 1
-# print()
-# # Циклом for
-# for i in range(6):
-#     print(i, '0000')
+print('Задача 1')
+print('Циклом while')
+a = 0
+while a <= 5:
+    print(a, "0000")
+    a += 1
+
+print('Циклом for')
+for i in range(6):
+    print(i, '0000')
+
+# Разделитель
+print('-' * 40)
 
 '''
 Задача 2
 Пользователь в цикле вводит 10 производных цифр. Выведите количество введеных пользователем цифр 5.
 '''
-# number_of_cycles = 0
-# count = 0
-# while number_of_cycles < 10:
-#     digit = int(input('Введите цифру: '))
-#     if digit == 5:
-#         count += 1
-#     number_of_cycles += 1
-# print('Кол-во введеных цифр 5:', count)
+print('Задача 2')
+print('Циклом while')
+number_of_cycles = 0
+count = 0
+while number_of_cycles < 10:
+    digit = int(input('Введите цифру: '))
+    if digit == 5:
+        count += 1
+    number_of_cycles += 1
+print('Кол-во введеных цифр 5:', count)
 
-# count = 0
-# for i in range(10):
-#     digit = int(input('Введите цифру: '))
-#     if digit == 5:
-#         count += 1
-# print('Кол-во введеных цифр 5:', count)
+print('Циклом for')
+count = 0
+for i in range(10):
+    digit = int(input('Введите цифру: '))
+    if digit == 5:
+        count += 1
+print('Кол-во введеных цифр 5:', count)
+
+# Разделитель
+print('-' * 40)
+
 '''
 Задача 3
 Вывести сумму ряда чисел от 1 до 100. Полученный результат вывести на экран.
 '''
-# summ = 0
-# for i in range(1, 101):
-#     summ += i
-# print('Сумма чисел от 1 до 100 равна', summ)
+print('Задача 3')
+summ = 0
+for num in range(1, 101):
+    summ += num
+print('Сумма чисел от 1 до 100 равна', summ)
+
+# Разделитель
+print('-' * 40)
 
 '''
 Задача 4
 Найти произведение ряда чисел от 1 до 10. Полученный результат вывести на экран(можно поискать в интернете алгоритм факториала в python).
 '''
-# prod = 1
-# for i in range(2, 11):
-#     prod *= i
-# print(prod)
+print('Задача 4')
+print('Произведение ряда чисел от 1 до 10:')
+prod = 1
+for num in range(2, 11):
+    prod *= num
+print(prod)
+
+# Разделитель
+print('-' * 40)
 
 '''
 (!!!Подсказка на следующую задачу - превратите число в строку, а потом работайте с строкой)
@@ -72,6 +92,7 @@
      6
      7
 '''
+print('Задача 5')
 number = 1234567
-for i in str(number):
-    print(i)
+for num in str(number):
+    print(num)
